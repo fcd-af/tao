@@ -1,0 +1,1 @@
+0 15 * * * SLACK_WEBHOOK="https://SLACKWEBHOOKURL/" /usr/bin/python3 /path/to/tao-bot.py /path/to/tao-te-ching.md
