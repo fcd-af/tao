@@ -71,8 +71,8 @@ def random_phrase(book: BOOK_TYPE) -> tuple[str, str]:
     """
     section = random.choice(list(book.keys()))
     chapter = random.choice(list(book[section].keys()))
-    phrase = random.choice(book[section][chapter])
-    return (f"{section} - Chapter {chapter}", phrase)
+    # phrase = random.choice(book[section][chapter])
+    return (f"{section} - Chapter {chapter}", "\n\n".join(book[section][chapter]))
 
 
 def main() -> None:
